@@ -144,13 +144,13 @@ body {
     color: white;
 }
 .key[match="exact"] {
-    background-color: limegreen;
+    background-color: green;
 }
 .key[match="other"] {
-    background-color: sandybrown;
+    background-color: yellow;
 }
 .key[match="wrong"] {
-    background-color: gray;
+    background-color: black;
 }
 .key.wide {
     width: calc(min(18vw, 10.8vh));
