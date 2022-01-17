@@ -15,6 +15,11 @@
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+:root {
+  --exact-bg-color: green;
+  --wrong-bg-color: darkSlateGrey;
+  --other-bg-color: lime;
+}
 
 @font-face {
     font-family: Arimo;
@@ -110,13 +115,13 @@ body {
     border: none;
 }
 .letter.exact {
-    background-color: limegreen;
+    background-color: var(--exact-bg-color);
 }
 .letter.other {
-    background-color: sandybrown;
+    background-color: var(--other-bg-color);
 }
 .letter.wrong {
-    background-color: gray;
+    background-color: var(--wrong-bg-color);
 }
 
 #keyboard {
@@ -144,13 +149,13 @@ body {
     color: white;
 }
 .key[match="exact"] {
-    background-color: green;
+    background-color: var(--exact-bg-color);
 }
 .key[match="other"] {
-    background-color: yellow;
+    background-color: var(--other-bg-color);
 }
 .key[match="wrong"] {
-    background-color: black;
+    background-color: var(--wrong-bg-color);
 }
 .key.wide {
     width: calc(min(18vw, 10.8vh));
